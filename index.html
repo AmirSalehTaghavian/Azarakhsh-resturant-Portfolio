@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رستوران آذرخش</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="cart-panel" class="hidden">
+        <p style="font-size: 34px;font-weight: 900;cursor: pointer;" class="close-cart-btn">&times;</p>
+        <h2>سبد خرید شما</h2>
+        <div id="cart-items"></div>
+      </div>
+    
+
+<header >
+<nav class="nav-bar">
+    <div class="logo">
+        آذرخش
+    </div>
+    <div class="options">
+        <span class="s-food-nav">غذا های ویژه</span>
+        <span class="menu-nav-scrool">منو</span>
+        <span class="about-us">درباره ما</span>
+    </div>
+    <div class="cart">
+        ۰        
+    </div>
+    <div class="menu" id="menu">
+        <img src="./images/menu.svg" alt="">
+    </div>
+</nav>
+<div class="menu-active" id="menu-active" dir="ltr">
+    <h1 class="close-menu" id="close-menu">&times;</h1>
+    <button class="option-active s-food-nav">غذا های ویژه</button>
+    <button class="option-active menu-nav-scrool">منو</button>
+    <button class="option-active about-us">درباره ما</button>
+    <button class="option-active cart-act">سبد خرید</button>
+
+</div>
+
+<div class="container">
+    <div class="burger-img-home"><img src="./images/home.png" class="home-img" alt=""></div>
+
+<div class="info">
+    <p class="name">برگر آذرخش</p>
+    <br>
+    <p class="desc">بهترین برگر های تهران فقط در رستوران ما</p>
+    <br>
+    <div class="order-btn-div">
+            <button class="order-btn">ثبت سفارش</button>
+
+    </div>
+</div>
+</div>
+</header>
+<br>
+<p class="food-menu" data-aos="zoom-in-left">منوی آذرخش</p>
+
+<div class="food-menu-container" data-aos="zoom-in-left">
+    <div class="food">
+        <div class="food-menu-img-parent">
+            <img src="./images/feature-menu-1.png" alt="" class="food-menu-img">
+        </div>
+        <p class="food-menu-name">باربیکیو</p>
+    </div>
+
+    <div class="food">
+        <div class="food-menu-img-parent">
+            <img src="./images/feature-menu-2.png" alt="" class="food-menu-img">
+        </div>
+        <p class="food-menu-name">برگر</p>
+    </div>
+
+    <div class="food">
+        <div class="food-menu-img-parent">
+            <img src="./images/feature-menu-3.png" alt="" class="food-menu-img">
+        </div>
+        <p class="food-menu-name">مرغ</p>
+    </div>
+
+    <div class="food">
+        <div class="food-menu-img-parent">
+            <img src="./images/feature-menu-4.png" alt="" class="food-menu-img">
+        </div>
+        <p class="food-menu-name">نوشیدنی</p>
+    </div>
+
+    <div class="food">
+        <div class="food-menu-img-parent">
+            <img src="./images/feature-menu-5.png" alt="" class="food-menu-img">
+        </div>
+        <p class="food-menu-name">ماهی</p>
+    </div>
+
+    <div class="food">
+        <div class="food-menu-img-parent">
+            <img src="./images/feature-menu-6.png" alt="" class="food-menu-img">
+        </div>
+        <p class="food-menu-name">پیتزا</p>
+    </div>
+</div>
+
+<p class="special-food" data-aos="zoom-in-right">غذا های ویژه</p>
+
+<div class="search-input-parent">
+ <input type="text" class="search-input" id="search-input" placeholder="جستوجو کنید...">
+</div>
+
+<div class="special-food-container">
+    <div class="s-food" data-aos="fade-up" data-id="1" data-name="باربیکیو گوشت گاو" data-price="120,000">
+<div class="img-parent">
+    <img src="./images/item-2.png" alt="" class="s-food-img">
+</div>
+<p class="s-food-name">باربیکیو گوشت گاو</p>
+
+<p class="price">۱۲۰٬۰۰۰ تومان</p>
+<div class="add-to-cart-parent">
+    <button class="add-to-cart">ثبت سفارش</button>
+</div>
+    </div>
+    <div class="s-food" data-aos="fade-up"  data-id="2" data-name="ماهیچه" data-price="220,000">
+<div class="img-parent">
+    <img src="./images/feature-menu-1.png" alt="" class="s-food-img">
+</div>
+<p class="s-food-name">ماهیچه</p>
+
+<p class="price">۲۲۰٬۰۰۰ تومان</p>
+<div class="add-to-cart-parent">
+    <button class="add-to-cart">ثبت سفارش</button>
+</div>
+    </div>
+    <div class="s-food" data-aos="fade-up"  data-id="3" data-name="اسپایسی برگر" data-price="120,000">
+<div class="img-parent">
+    <img src="./images/feature-menu-2.png" alt="" class="s-food-img">
+</div>
+<p class="s-food-name" >اسپایسی برگر</p>
+
+<p class="price">۱۲۰٬۰۰۰ تومان</p>
+<div class="add-to-cart-parent">
+    <button class="add-to-cart">ثبت سفارش</button>
+</div>
+    </div>
+    <div class="s-food" data-aos="fade-up"  data-id="4" data-name="نوشابه" data-price="22,000">
+<div class="img-parent">
+    <img src="./images/feature-menu-4.png" alt="" class="s-food-img">
+</div>
+<p class="s-food-name">نوشابه</p>
+
+<p class="price">۲۲٬۰۰۰ تومان</p>
+<div class="add-to-cart-parent">
+    <button class="add-to-cart">ثبت سفارش</button>
+</div>
+    </div>
+    <div class="s-food" data-aos="fade-up"  data-id="5" data-name="ماهی" data-price="350,000">
+<div class="img-parent">
+    <img src="./images/feature-menu-5.png" alt="" class="s-food-img">
+</div>
+<p class="s-food-name">ماهی</p>
+
+<p class="price">۳۵۰٬۰۰۰ تومان</p>
+<div class="add-to-cart-parent">
+    <button class="add-to-cart">ثبت سفارش</button>
+</div>
+    </div>
+    <div class="s-food" data-aos="fade-up"  data-id="6" data-name="ناگت مرغ" data-price="180,000">
+<div class="img-parent">
+    <img src="./images/feature-menu-3.png" alt="" class="s-food-img">
+</div>
+<p class="s-food-name">ناگت مرغ</p>
+
+<p class="price">۱۸۰٬۰۰۰ تومان</p>
+<div class="add-to-cart-parent">
+    <button class="add-to-cart">ثبت سفارش</button>
+</div>
+    </div>
+    <div class="s-food" data-aos="fade-up"  data-id="7" data-name="باربیکیو گوشت" data-price="150,000">
+<div class="img-parent">
+    <img src="./images/bbq-3.png" alt="" class="s-food-img">
+</div>
+<p class="s-food-name">باربیکیو گوشت</p>
+
+<p class="price">۱۵۰٬۰۰۰ تومان</p>
+<div class="add-to-cart-parent">
+    <button class="add-to-cart">ثبت سفارش</button>
+</div>
+    </div>
+    <div class="s-food" data-aos="fade-up"  data-id="8" data-name="باربیکیو ذغالی" data-price="220,000">
+<div class="img-parent">
+    <img src="./images/bbq-2.png" alt="" class="s-food-img">
+</div>
+<p class="s-food-name">باربیکیو ذغالی</p>
+
+<p class="price">۲۲۰٬۰۰۰ تومان</p>
+<div class="add-to-cart-parent">
+    <button class="add-to-cart">ثبت سفارش</button>
+</div>
+    </div>
+</div>
+<!-- تابلو های غذای آذرخش -->
+
+<p class="most-food-title" data-aos="zoom-in-left">غذا های پرفروش</p>
+
+<div class="food-board">
+    <div class="menu-board-burgers" data-aos="zoom-in-left">
+        <p class="most-burger-title" >پرفروش ترین برگر ها</p>
+        <div class="burgers" data-aos="zoom-in-left">
+            <div class="burger-img-parent">
+                <img src="./images/burger-1.png" alt="burger 1" class="burger-img">
+            </div>
+            <div class="burger-text">
+            <p class="burger-name">متابرگر</p>
+            <p class="burger-info">سایز بزرگ و متوسط از 180000 تا 220000 تومان</p>
+            </div>
+        </div>
+        <div class="burgers" data-aos="zoom-in-left">
+            <div class="burger-img-parent">
+                <img src="./images/burger-2.png" alt="burger 1" class="burger-img">
+            </div>
+            <div class="burger-text">
+            <p class="burger-name">اسپایسی برگر</p>
+            <p class="burger-info">سایز بزرگ و متوسط از 180000 تا 220000 تومان</p>
+            </div>
+        </div>
+    </div>
+    <div class="menu-board-burgers" data-aos="zoom-in-right">
+        <p class="most-bbq-title">پرفروش ترین باربیکیو ها</p>
+        <div class="burgers" data-aos="zoom-in-right">
+            <div class="burger-img-parent">
+                <img src="./images/bbq-1.png" alt="burger 1" class="burger-img">
+            </div>
+            <div class="burger-text">
+            <p class="burger-name">گوشت گوسفندی</p>
+            <p class="burger-info">سایز بزرگ و متوسط از 180000 تا 220000 تومان</p>
+            </div>
+        </div>
+        <div class="burgers" data-aos="zoom-in-right">
+            <div class="burger-img-parent">
+                <img src="./images/bbq-2.png" alt="burger 1" class="burger-img">
+            </div>
+            <div class="burger-text">
+            <p class="burger-name">کوچی باربیکیو</p>
+            <p class="burger-info">سایز بزرگ و متوسط از 180000 تا 220000 تومان</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p class="comments-title">نظرات مشتری</p>
+
+
+<div class="comments-container">
+    <div class="prev"><i class="fa-solid fa-forward" style="color: #fff;"></i></div>
+    <div class="comment">
+        <p class="comment-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>    
+        <p class="comment-name">زهرا محمدی</p>
+
+    </div>
+    <div class="next"><i class="fa-solid fa-backward" style="color: #fff;"></i></div>
+</div>
+
+<footer class="footer">
+    <br>
+<p class="About-title">درباره ما</p>
+
+<div class="footer-info">
+    <p class="phone-number"><i class="fa-solid fa-phone" style="color:#ad0000 ;"></i>شماره تلفن:۱۵۰۱۵۰۰۰۰۰۰۰</p>
+    <p class="location"><i class="fa-solid fa-location-dot" style="color:#ad0000 ;"></i>آدرس ایران , تهران, شهرستان بهارستان,شهر گلستان, کاملیاشرقی, کوچه شقایق 2</p>
+    <p class="schu"><i class="fa-solid fa-business-time" style="color:#ad0000; "></i>تایم های کاری: از ساعت 10 صبح تا 11 شب</p>
+</div>
+<div class="social-media-container">
+    <a href="#" class="social-media-link">
+        <button class="social-media-btn"><i class="fa-brands fa-youtube fa-2xl" style="color: red;"></i></button>
+    </a>
+    <a href="#" class="social-media-link">
+<button class="social-media-btn"><i class="fa-brands fa-telegram fa-2xl"  style="color: #24a1de;"></i></button>
+    </a>
+    <a href="#" class="social-media-link">
+<button class="social-media-btn"><i class="fa-brands fa-x-twitter fa-2xl"></i></button>
+    </a>
+</div>
+</footer>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
