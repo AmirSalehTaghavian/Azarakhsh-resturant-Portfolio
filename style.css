@@ -8,7 +8,6 @@
 }
 body {
   background-color: #fff;
-  overflow-x: hidden;
 }
 header {
   background-color: #ad0000;
@@ -597,11 +596,13 @@ nav {
   }
   .menu-board-burgers {
     height: 240px;
+    width: 350px;
   }
   .burgers {
     height: 85px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 300px;
   }
   .burger-info {
     margin: 0;
@@ -618,5 +619,21 @@ nav {
   .prev {
     margin-right: 5px;
     width: 105px;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .footer {
+    height: 450px;
+  }
+  .social-media-container {
+    margin-top: 70px;
+  }
+  .About-title {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 29px;
   }
 }
