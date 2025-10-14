@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: Vazirmatn;
 }
+html, body {
+  overflow-x: hidden;
+}
 body {
   background-color: #fff;
 }
